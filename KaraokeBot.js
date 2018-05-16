@@ -6,11 +6,11 @@
 var mongo = require("mongodb");
 var TelegramBot = require("node-telegram-bot-api");
 var fs = require("fs");
-var red = fs.readFileSync(__dirname + "/ban.json");
+var red = fs.readFileSync(__dirname + "/ban.json"); // create ban.json file for band the users
 var ar = JSON.parse(red);
 var cli = mongo.MongoClient;
  
-var redtimefile = fs.readFileSync(__dirname + "/time.json");
+var redtimefile = fs.readFileSync(__dirname + "/time.json"); // create time file for saving time
 var redtime = JSON.parse(redtimefile);
 var url = "MongoUrl";
 
